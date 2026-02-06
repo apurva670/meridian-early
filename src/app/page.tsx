@@ -61,7 +61,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-3 text-neutral-500 dark:text-neutral-400">
                   <div className="w-1.5 h-1.5 rounded-full bg-neutral-400" />
-                  <span>Launching Q1 2026</span>
+                  <span>Opening Q1 2026</span>
                 </div>
               </div>
             </div>

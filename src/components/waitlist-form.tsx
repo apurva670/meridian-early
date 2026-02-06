@@ -217,13 +217,18 @@ export function WaitlistForm() {
                     </div>
 
                     {/* Submit Button */}
-                    <Button
-                        type="submit"
-                        disabled={mutation.isPending}
-                        className="w-full bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 font-medium"
-                    >
-                        {mutation.isPending ? "Submitting..." : "Join Waitlist"}
-                    </Button>
+                    <div className="space-y-2">
+                        <Button
+                            type="submit"
+                            disabled={mutation.isPending}
+                            className="w-full bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 font-medium"
+                        >
+                            {mutation.isPending ? "Submitting..." : "Request Access"}
+                        </Button>
+                        <p className="text-center text-sm text-neutral-500 dark:text-neutral-400">
+                            Access is limited
+                        </p>
+                    </div>
                 </form>
             </CardContent>
         </Card>
