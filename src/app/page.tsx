@@ -68,7 +68,7 @@ export default function Home() {
 
             {/* Right Column - Form */}
             <div className="flex justify-center md:justify-end">
-              <WaitlistForm />
+              <WaitlistForm turnstileSiteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY} />
             </div>
           </div>
         </section>
