@@ -5,6 +5,8 @@ import { Providers } from "@/components/providers";
 import { Analytics } from "@vercel/analytics/next";
 
 
+import { CSPostHogProvider } from "@/components/posthog-provider";
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -43,8 +45,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased`}>
-        <Providers>{children}</Providers>
-        <Analytics />
+        <CSPostHogProvider>
+          <Providers>{children}</Providers>
+          <Analytics />
+        </CSPostHogProvider>
       </body>
     </html>
   );
