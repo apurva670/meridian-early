@@ -68,9 +68,16 @@ export async function GET(request: NextRequest) {
             })
         ]);
 
-        if (!trendRes.ok || !visitorsRes.ok) {
-            console.error("PostHog API Error", await trendRes.text());
-            throw new Error("Failed to fetch from PostHog");
+        if (!trendRes.ok) {
+            const errorText = await trendRes.text();
+            console.error("PostHog Trend Error:", trendRes.status, errorText);
+            return NextResponse.json({ message: `PostHog Trend Error: ${trendRes.status} ${errorText}` }, { status: trendRes.status });
+        }
+
+        if (!visitorsRes.ok) {
+            const errorText = await visitorsRes.text();
+            console.error("PostHog Visitor Error:", visitorsRes.status, errorText);
+            return NextResponse.json({ message: `PostHog Visitor Error: ${visitorsRes.status} ${errorText}` }, { status: visitorsRes.status });
         }
 
         const trendData = await trendRes.json();
@@ -87,7 +94,7 @@ export async function GET(request: NextRequest) {
     } catch (error) {
         console.error("Analytics proxy error:", error);
         return NextResponse.json(
-            { message: "Failed to fetch analytics" },
+            { message: error instanceof Error ? error.message : "Failed to fetch analytics" },
             { status: 500 }
         );
     }

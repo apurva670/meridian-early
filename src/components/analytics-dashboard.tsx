@@ -17,7 +17,10 @@ export function AnalyticsDashboard() {
         queryKey: ['analytics-stats'],
         queryFn: async () => {
             const res = await fetch('/api/analytics/stats?date_from=-7d');
-            if (!res.ok) throw new Error('Failed to fetch stats');
+            if (!res.ok) {
+                const err = await res.json();
+                throw new Error(err.message || 'Failed to fetch stats');
+            }
             return res.json();
         },
         refetchInterval: 10000, // Poll every 10 seconds for "real-time" feel
@@ -29,9 +32,12 @@ export function AnalyticsDashboard() {
 
     if (error) {
         return (
-            <div className="p-8 text-center text-red-400">
-                Failed to load analytics. Please check API keys.
-                <button onClick={() => refetch()} className="ml-4 underline">Retry</button>
+            <div className="p-8 text-center text-red-400 max-w-md mx-auto">
+                <p className="mb-4">Failed to load analytics.</p>
+                <div className="text-xs font-mono bg-slate-800 p-4 rounded mb-4 text-left overflow-auto max-h-40">
+                    {error instanceof Error ? error.message : "Unknown error"}
+                </div>
+                <button onClick={() => refetch()} className="underline hover:text-white">Retry</button>
             </div>
         );
     }
