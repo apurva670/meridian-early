@@ -7,6 +7,7 @@ import { useEffect, Suspense } from "react";
 if (typeof window !== 'undefined') {
     const key = process.env.NEXT_PUBLIC_POSTHOG_KEY
     if (key) {
+        console.log("PostHog Provider: Initializing with Key:", key.substring(0, 5) + "...");
         posthog.init(key, {
             api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
             person_profiles: 'identified_only',
