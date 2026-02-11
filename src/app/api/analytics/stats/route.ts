@@ -13,19 +13,59 @@ export async function GET(request: NextRequest) {
             );
         }
 
-        const { searchParams } = new URL(request.url);
-        const date_from = searchParams.get('date_from') || '-7d';
+        const queryUrl = `${host}/api/projects/${projectId}/query/`;
 
-        // Fetch trend data (Total Pageviews)
-        const trendUrl = `${host}/api/projects/${projectId}/insights/trend/?events=[{"id":"$pageview","name":"$pageview","type":"events"}]&date_from=${date_from}&display=ActionsLineGraph`;
+        // Query for total pageviews (trend)
+        const pageviewQuery = {
+            "kind": "TrendsQuery",
+            "series": [
+                {
+                    "kind": "EventsNode",
+                    "event": "$pageview",
+                    "name": "$pageview"
+                }
+            ],
+            "dateRange": {
+                "date_from": "-7d"
+            },
+            "interval": "day"
+        };
 
-        // Fetch unique visitors
-        const visitorsUrl = `${host}/api/projects/${projectId}/insights/trend/?events=[{"id":"$pageview","name":"$pageview","type":"events","math":"dau"}]&date_from=${date_from}&display=ActionsLineGraph`;
+        // Query for Unique Visitors (DAU)
+        const visitorsQuery = {
+            "kind": "TrendsQuery",
+            "series": [
+                {
+                    "kind": "EventsNode",
+                    "event": "$pageview",
+                    "name": "$pageview",
+                    "math": "dau"
+                }
+            ],
+            "dateRange": {
+                "date_from": "-7d"
+            },
+            "interval": "day"
+        };
 
 
         const [trendRes, visitorsRes] = await Promise.all([
-            fetch(trendUrl, { headers: { Authorization: `Bearer ${personalApiKey}` } }),
-            fetch(visitorsUrl, { headers: { Authorization: `Bearer ${personalApiKey}` } })
+            fetch(queryUrl, {
+                method: 'POST',
+                headers: {
+                    Authorization: `Bearer ${personalApiKey}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ query: pageviewQuery })
+            }),
+            fetch(queryUrl, {
+                method: 'POST',
+                headers: {
+                    Authorization: `Bearer ${personalApiKey}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ query: visitorsQuery })
+            })
         ]);
 
         if (!trendRes.ok || !visitorsRes.ok) {
@@ -37,11 +77,11 @@ export async function GET(request: NextRequest) {
         const visitorsData = await visitorsRes.json();
 
         return NextResponse.json({
-            pageviews: trendData.result?.[0]?.data || [],
-            visitors: visitorsData.result?.[0]?.data || [],
-            labels: trendData.result?.[0]?.labels || [],
-            count: trendData.result?.[0]?.count || 0,
-            visitor_count: visitorsData.result?.[0]?.count || 0
+            pageviews: trendData.results?.[0]?.data || [],
+            visitors: visitorsData.results?.[0]?.data || [],
+            labels: trendData.results?.[0]?.labels || [],
+            count: trendData.results?.[0]?.count || 0,
+            visitor_count: visitorsData.results?.[0]?.count || 0
         });
 
     } catch (error) {
