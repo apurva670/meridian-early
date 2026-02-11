@@ -47,6 +47,22 @@ export function AnalyticsDashboard() {
             <div className="flex items-center justify-between">
                 <h2 className="text-3xl font-bold tracking-tight text-white">Dashboard</h2>
                 <div className="flex items-center gap-4">
+                    <button
+                        onClick={() => {
+                            console.log('Sending test event...');
+                            console.log('PH Key:', process.env.NEXT_PUBLIC_POSTHOG_KEY?.slice(0, 5));
+                            console.log('Turnstile Key:', process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY?.slice(0, 5));
+                            if ((window as any).posthog) {
+                                (window as any).posthog.capture('test_event_dashboard', { source: 'manual_button' });
+                                alert('Test event sent! Check PostHog "Activity" tab.');
+                            } else {
+                                alert('PostHog not found on window object');
+                            }
+                        }}
+                        className="text-xs bg-slate-800 hover:bg-slate-700 text-white px-2 py-1 rounded"
+                    >
+                        Test Tracking
+                    </button>
                     <div className="text-xs text-slate-400">
                         Updated: {new Date().toLocaleTimeString()}
                     </div>
