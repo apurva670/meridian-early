@@ -203,17 +203,21 @@ export function WaitlistForm() {
 
                     {/* Turnstile */}
                     <div className="flex justify-center -my-3 scale-75 origin-center h-12 overflow-hidden">
-                        <Turnstile
-                            ref={turnstileRef}
-                            siteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY || ""}
-                            onSuccess={setTurnstileToken}
-                            onError={() => setFormError("Security check failed. Please try again.")}
-                            onExpire={() => setTurnstileToken("")}
-                            options={{
-                                theme: "auto",
-                                size: "compact",
-                            }}
-                        />
+                        {process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY ? (
+                            <Turnstile
+                                ref={turnstileRef}
+                                siteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY}
+                                onSuccess={setTurnstileToken}
+                                onError={() => setFormError("Security check failed. Please try again.")}
+                                onExpire={() => setTurnstileToken("")}
+                                options={{
+                                    theme: "auto",
+                                    size: "compact",
+                                }}
+                            />
+                        ) : (
+                            <p className="text-red-500 text-xs">Security check unavailable (Missing Site Key)</p>
+                        )}
                     </div>
 
                     {/* Submit Button */}
