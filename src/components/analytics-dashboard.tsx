@@ -46,9 +46,14 @@ export function AnalyticsDashboard() {
         <div className="space-y-6">
             <div className="flex items-center justify-between">
                 <h2 className="text-3xl font-bold tracking-tight text-white">Dashboard</h2>
-                <div className="flex items-center gap-2 text-sm text-slate-400">
-                    <RefreshCw className="h-4 w-4 animate-spin" style={{ animationDuration: '3s' }} />
-                    Live updating
+                <div className="flex items-center gap-4">
+                    <div className="text-xs text-slate-400">
+                        Updated: {new Date().toLocaleTimeString()}
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-slate-400">
+                        <RefreshCw className="h-4 w-4 animate-spin" style={{ animationDuration: '3s' }} />
+                        Live
+                    </div>
                 </div>
             </div>
 
