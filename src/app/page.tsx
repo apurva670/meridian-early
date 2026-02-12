@@ -64,6 +64,19 @@ export default function Home() {
                   <span>Opening Q1 2026</span>
                 </div>
               </div>
+
+              {/* Testimonial */}
+              <div className="relative border-l-2 border-neutral-200 dark:border-neutral-800 pl-5 mt-2">
+                <p className="text-neutral-500 dark:text-neutral-400 text-sm leading-relaxed italic">
+                  &ldquo;The Meridian Compass group has been a total game changer to how I look at the markets everyday. Having an insight to how a real portfolio manager who&apos;s managed substantial assets goes about the market every morning. In this group I was taught process and structure in real time without signals so I really learn the market. These insights on bitcoin these past months have been nothing less than perfect.&rdquo;
+                </p>
+                <div className="mt-3 flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-full bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center text-[10px] font-medium text-neutral-600 dark:text-neutral-300">
+                    BD
+                  </div>
+                  <p className="text-xs font-medium text-neutral-700 dark:text-neutral-300">Brian Delahanty</p>
+                </div>
+              </div>
             </div>
 
             {/* Right Column - Form */}
@@ -73,31 +86,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Testimonial Section */}
-        <section className="max-w-3xl mx-auto px-6 py-12 md:py-20">
-          <div className="relative border border-neutral-200 dark:border-neutral-800 rounded-lg p-8 md:p-10 bg-neutral-50/50 dark:bg-neutral-900/30 backdrop-blur-sm">
-            {/* Quote Mark */}
-            <div className="absolute -top-4 left-8 bg-white dark:bg-neutral-950 px-3">
-              <svg className="w-6 h-6 text-neutral-300 dark:text-neutral-700" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zm-14.017 0v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H0z" />
-              </svg>
-            </div>
-
-            <blockquote className="text-neutral-600 dark:text-neutral-300 leading-relaxed text-base md:text-lg italic">
-              The Meridian Compass group has been a total game changer to how I look at the markets everyday. Having an insight to how a real portfolio manager who&apos;s managed substantial assets goes about the market every morning. In this group I was taught process and structure in real time without signals so I really learn the market. These insights on bitcoin these past months have been nothing less than perfect. Showing how a true professional sees the market with process and structure.
-            </blockquote>
-
-            <div className="mt-6 flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center text-sm font-medium text-neutral-600 dark:text-neutral-300">
-                BD
-              </div>
-              <div>
-                <p className="font-medium text-neutral-900 dark:text-white text-sm">Brian Delahanty</p>
-                <p className="text-xs text-neutral-500 dark:text-neutral-400">Member</p>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Footer */}
         <footer className="relative z-20 mt-8 bg-neutral-950 text-white">
