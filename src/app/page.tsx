@@ -52,7 +52,7 @@ export default function Home() {
                 <div className="flex items-center gap-3 text-neutral-700 dark:text-neutral-300">
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
                   <span>
-                    <strong>Introductory Price:</strong> $300/month (Standard: $600/mo)
+                    <strong>Limited Spots:</strong> $300/mo <span className="line-through text-neutral-400">$600/mo</span>
                   </span>
                 </div>
                 <div className="flex items-center gap-3 text-neutral-500 dark:text-neutral-400">
