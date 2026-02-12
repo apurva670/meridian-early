@@ -67,7 +67,7 @@ export default function Home() {
 
               {/* Testimonial */}
               <div className="mt-2 space-y-3">
-                <p className="text-xs font-medium uppercase tracking-widest text-neutral-400 dark:text-neutral-500">What Members Say</p>
+                <p className="text-xs font-medium uppercase tracking-widest text-neutral-900 dark:text-neutral-100">What Members Say</p>
                 <div className="relative border-l-2 border-neutral-200 dark:border-neutral-800 pl-5">
                   <p className="text-neutral-500 dark:text-neutral-400 text-sm leading-relaxed italic">
                     &ldquo;The Meridian Compass group has been a total game changer to how I look at the markets everyday. Having an insight to how a real portfolio manager who&apos;s managed substantial assets goes about the market every morning. In this group I was taught process and structure in real time without signals so I really learn the market. These insights on bitcoin these past months have been nothing less than perfect.&rdquo;
