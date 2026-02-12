@@ -57,7 +57,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-3 text-neutral-500 dark:text-neutral-400">
                   <div className="w-1.5 h-1.5 rounded-full bg-neutral-400" />
-                  <span>Lock in $300/mo for life — First 25 members only</span>
+                  <span>Lock in $300/mo for life — Next 25 members only</span>
                 </div>
                 <div className="flex items-center gap-3 text-neutral-500 dark:text-neutral-400">
                   <div className="w-1.5 h-1.5 rounded-full bg-neutral-400" />
