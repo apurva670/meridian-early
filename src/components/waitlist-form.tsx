@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { Button } from "@/components/ui/button";
@@ -45,14 +45,7 @@ export function WaitlistForm({ turnstileSiteKey }: WaitlistFormProps) {
     const [formError, setFormError] = useState("");
     const turnstileRef = useRef<TurnstileInstance>(null);
 
-    // Debug logging for Turnstile Key
-    useEffect(() => {
-        const envKey = process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY;
-        console.log("WaitlistForm Debug:");
-        console.log("- Prop Key:", turnstileSiteKey ? `${turnstileSiteKey.substring(0, 5)}...` : "undefined");
-        console.log("- Env Key:", envKey ? `${envKey.substring(0, 5)}...` : "undefined");
-        console.log("- Effective Key:", (turnstileSiteKey || envKey) ? "Present" : "Missing");
-    }, [turnstileSiteKey]);
+
 
     const mutation = useMutation({
         mutationFn: submitWaitlist,
@@ -90,7 +83,7 @@ export function WaitlistForm({ turnstileSiteKey }: WaitlistFormProps) {
             return;
         }
 
-        console.log("Submitting form with token length:", turnstileToken.length);
+
         mutation.mutate({ email, tradingPreference, interestLevel, turnstileToken });
     };
 
