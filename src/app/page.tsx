@@ -66,15 +66,18 @@ export default function Home() {
               </div>
 
               {/* Testimonial */}
-              <div className="relative border-l-2 border-neutral-200 dark:border-neutral-800 pl-5 mt-2">
-                <p className="text-neutral-500 dark:text-neutral-400 text-sm leading-relaxed italic">
-                  &ldquo;The Meridian Compass group has been a total game changer to how I look at the markets everyday. Having an insight to how a real portfolio manager who&apos;s managed substantial assets goes about the market every morning. In this group I was taught process and structure in real time without signals so I really learn the market. These insights on bitcoin these past months have been nothing less than perfect.&rdquo;
-                </p>
-                <div className="mt-3 flex items-center gap-2">
-                  <div className="w-7 h-7 rounded-full bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center text-[10px] font-medium text-neutral-600 dark:text-neutral-300">
-                    BD
+              <div className="mt-2 space-y-3">
+                <p className="text-xs font-medium uppercase tracking-widest text-neutral-400 dark:text-neutral-500">What Members Say</p>
+                <div className="relative border-l-2 border-neutral-200 dark:border-neutral-800 pl-5">
+                  <p className="text-neutral-500 dark:text-neutral-400 text-sm leading-relaxed italic">
+                    &ldquo;The Meridian Compass group has been a total game changer to how I look at the markets everyday. Having an insight to how a real portfolio manager who&apos;s managed substantial assets goes about the market every morning. In this group I was taught process and structure in real time without signals so I really learn the market. These insights on bitcoin these past months have been nothing less than perfect.&rdquo;
+                  </p>
+                  <div className="mt-3 flex items-center gap-2">
+                    <div className="w-7 h-7 rounded-full bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center text-[10px] font-medium text-neutral-600 dark:text-neutral-300">
+                      BD
+                    </div>
+                    <p className="text-xs font-medium text-neutral-700 dark:text-neutral-300">Brian Delahanty</p>
                   </div>
-                  <p className="text-xs font-medium text-neutral-700 dark:text-neutral-300">Brian Delahanty</p>
                 </div>
               </div>
             </div>
