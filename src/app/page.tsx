@@ -1,17 +1,16 @@
 import { WaitlistForm } from "@/components/waitlist-form";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { StaticBackground } from "@/components/parallax-background";
 import { CompassLogo } from "@/components/compass-pointer";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white dark:bg-neutral-950 text-neutral-900 dark:text-white transition-colors relative">
+    <div className="min-h-screen bg-[#FAFAFA] text-neutral-900 relative">
       {/* Static Background */}
       <StaticBackground />
 
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-md">
+      <header className="fixed top-0 left-0 right-0 z-50 border-b border-neutral-200 bg-white/80 backdrop-blur-md">
         <div className="max-w-6xl mx-auto px-6 py-4 grid grid-cols-3 items-center">
           {/* Left spacer */}
           <div />
@@ -23,7 +22,6 @@ export default function Home() {
 
           {/* Right - Controls (hidden on mobile) */}
           <div className="hidden md:flex items-center justify-end">
-            <ThemeToggle />
           </div>
         </div>
       </header>
@@ -31,125 +29,532 @@ export default function Home() {
       {/* Main Content */}
       <main className="relative z-10 pt-24">
         {/* Hero Section */}
-        <section className="max-w-6xl mx-auto px-6 py-8 md:py-24">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-            {/* Left Column - Content */}
-            <div className="space-y-6">
-              <div className="space-y-3">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl font-light leading-tight text-neutral-900 dark:text-white">
-                  Trade Like the Institutions Do
-                </h1>
-                <p className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400">
-                  The same frameworks used to manage $100M+ in FX, crypto, and futures — now available to you.
-                </p>
-              </div>
-
-              <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed">
-                30+ years of institutional experience distilled into actionable setups. Learn to read structure, momentum, and market narrative like a professional PM.
-              </p>
-
-              <div className="space-y-3 pt-2">
-                <div className="flex items-center gap-3 text-neutral-700 dark:text-neutral-300">
-                  <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
-                  <span>
-                    <strong>Limited Spots:</strong> $300/mo <span className="line-through text-neutral-400">$600/mo</span>
+        <section className="w-full bg-[#FAFAFA]">
+          <div className="max-w-6xl mx-auto px-6 py-20 md:py-32">
+            <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-center">
+              {/* Left Column - Content */}
+              <div className="space-y-8">
+                <div className="space-y-4">
+                  <span className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
+                    MERIDIAN COMPASS — PRIVATE INTELLIGENCE FEED
                   </span>
+                  <h1 className="text-2xl md:text-3xl font-light leading-tight text-neutral-900">
+                    Private Institutional Market Intelligence — Delivered Daily
+                  </h1>
                 </div>
-                <div className="flex items-center gap-3 text-neutral-500 dark:text-neutral-400">
-                  <div className="w-1.5 h-1.5 rounded-full bg-neutral-400" />
-                  <span>Lock in $300/mo for life — Next 25 members only</span>
-                </div>
-                <div className="flex items-center gap-3 text-neutral-500 dark:text-neutral-400">
-                  <div className="w-1.5 h-1.5 rounded-full bg-neutral-400" />
-                  <span>Opening Q1 2026</span>
-                </div>
-              </div>
 
-              {/* Testimonial */}
-              <div className="mt-2 space-y-3">
-                <p className="text-xs font-medium uppercase tracking-widest text-neutral-900 dark:text-neutral-100">What Members Say</p>
-                <div className="relative border-l-2 border-neutral-200 dark:border-neutral-800 pl-5">
-                  <p className="text-neutral-500 dark:text-neutral-400 text-sm leading-relaxed italic">
-                    &ldquo;The Meridian Compass group has been a total game changer to how I look at the markets everyday. Having an insight to how a real portfolio manager who&apos;s managed substantial assets goes about the market every morning. In this group I was taught process and structure in real time without signals so I really learn the market. These insights on bitcoin these past months have been nothing less than perfect.&rdquo;
+                <div className="space-y-6 text-neutral-600 leading-relaxed font-light text-lg">
+                  <p>
+                    Real-time market context from a 30-year institutional PM who currently
+                    provides daily analysis to hedge funds, refiners, and energy clients —
+                    and managed $300M+ systematic portfolios through multiple crisis cycles.
                   </p>
-                  <div className="mt-3 flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center text-[10px] font-medium text-neutral-600 dark:text-neutral-300">
-                      BD
+                  <p>
+                    The same structural analysis and risk frameworks shared with institutional
+                    clients — now available privately to serious individual operators.
+                  </p>
+                </div>
+
+                <p className="font-medium text-neutral-900">
+                  The channel is active now. Founding members are already inside.
+                </p>
+
+
+                {/* Testimonial */}
+                <div className="mt-8 space-y-4 p-8 bg-white border border-neutral-100 shadow-sm rounded-lg">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">What Members Say</p>
+                  <div className="relative">
+                    <p className="text-neutral-600 text-sm leading-relaxed italic">
+                      &ldquo;The Meridian Compass group has been a total game changer to how I look at the markets everyday. Having an insight to how a real portfolio manager who's managed substantial assets goes about the market every morning. In this group I was taught process and structure in real time without signals so I really learn the market. These insights on bitcoin these past months have been nothing less than perfect.&rdquo;
+                    </p>
+                    <div className="mt-4 flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-neutral-100 flex items-center justify-center text-xs font-medium text-neutral-600">
+                        BD
+                      </div>
+                      <p className="text-sm font-medium text-neutral-900">Brian Delahanty</p>
                     </div>
-                    <p className="text-xs font-medium text-neutral-700 dark:text-neutral-300">Brian Delahanty</p>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Right Column - Form */}
-            <div className="flex justify-center md:justify-end">
-              <WaitlistForm turnstileSiteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY} />
+              {/* Right Column - Form */}
+              <div className="flex justify-center md:justify-end">
+                <WaitlistForm turnstileSiteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY} />
+              </div>
             </div>
           </div>
         </section>
 
+        {/* Section 2 - What This Is */}
+        <section className="w-full bg-white border-y border-neutral-100">
+          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
+            <div className="space-y-12">
 
-        {/* Footer */}
-        <footer className="relative z-20 mt-8 bg-neutral-950 text-white">
-          <div className="max-w-6xl mx-auto px-6 py-6">
-            <div className="grid md:grid-cols-3 gap-8 items-center">
-              {/* Logo */}
-              <div className="flex items-center gap-2">
-                <span className="text-lg font-light tracking-[0.15em]">MERIDIAN</span>
-                <span className="text-lg font-extralight tracking-[0.15em] text-neutral-400">COMPASS</span>
+              <div className="space-y-6">
+                <h2 className="text-2xl md:text-3xl font-light text-neutral-900">
+                  Real-Time Institutional Analysis — Not Retail Noise
+                </h2>
+                <div className="space-y-4 text-neutral-600 font-light text-lg leading-relaxed">
+                  <p>
+                    I currently provide daily market analysis to hedge funds, refiners, and
+                    energy clients through institutional channels.
+                  </p>
+                  <p>
+                    Opening limited private access to the same real-time context — structural
+                    setups, positioning reads, and risk frameworks delivered as markets develop.
+                  </p>
+                  <p className="font-medium text-neutral-900">
+                    Not hours later. Not delayed recaps. Real-time professional intelligence.
+                  </p>
+                </div>
               </div>
 
-              {/* Tagline */}
-              <div className="text-center hidden md:block">
-                <p className="text-neutral-400 text-xs whitespace-nowrap">
-                  Institutional Market Frameworks for FX, Crypto & Global Futures
+              <div className="grid md:grid-cols-2 gap-12 pt-12 border-t border-neutral-200">
+                {/* What members receive */}
+                <div className="space-y-6">
+                  <h3 className="text-sm font-semibold uppercase tracking-widest text-neutral-500">
+                    What members receive:
+                  </h3>
+                  <ul className="space-y-3 text-neutral-600 font-light">
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Real-time context when actual setups are developing — not forced posts to fill space</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Not just levels — learn HOW to identify structure, positioning, and inflection points yourself</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Institutional frameworks for reading momentum, divergence, and market narrative</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Context across BTC, FX, and futures</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Private Telegram broadcast (one-way, no chat noise)</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Format */}
+                <div className="space-y-6">
+                  <h3 className="text-sm font-semibold uppercase tracking-widest text-neutral-500">
+                    Format:
+                  </h3>
+                  <ul className="space-y-3 text-neutral-600 font-light">
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Private Telegram channel (broadcast, one-way)</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Updates when markets are moving or setups developing</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Could be multiple updates per day or quiet when nothing's there</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>No manufactured content — only when it matters</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* Section 3 - What This Is Not */}
+        <section className="w-full bg-[#FAFAFA]">
+          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
+            <div className="space-y-12">
+
+              <div className="grid md:grid-cols-2 gap-12">
+                {/* Not For */}
+                <div className="space-y-6">
+                  <h3 className="text-xl font-light text-neutral-900">
+                    Not for:
+                  </h3>
+                  <ul className="space-y-3 text-neutral-600 font-light">
+                    <li className="flex gap-3">
+                      <span className="text-red-500 mt-1">❌</span>
+                      <span>Signal chasers</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-red-500 mt-1">❌</span>
+                      <span>Beginners looking for shortcuts</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-red-500 mt-1">❌</span>
+                      <span>Copy traders</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-red-500 mt-1">❌</span>
+                      <span>Anyone seeking &quot;holy grail&quot; setups</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* This Is */}
+                <div className="space-y-6">
+                  <h3 className="text-xl font-light text-neutral-900">
+                    This is:
+                  </h3>
+                  <ul className="space-y-3 text-neutral-600 font-light">
+                    <li className="flex gap-3">
+                      <span className="text-neutral-900 mt-1">✓</span>
+                      <span>Market structure analysis</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-900 mt-1">✓</span>
+                      <span>Positioning context</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-900 mt-1">✓</span>
+                      <span>Institutional frameworks</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-900 mt-1">✓</span>
+                      <span>Learning to think like a PM</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p className="text-center font-medium text-neutral-900 text-lg border-t border-neutral-200 pt-12">
+                You learn to read markets independently — not follow someone else&apos;s calls.
+              </p>
+
+            </div>
+          </div>
+        </section>
+
+        {/* Section 4 - Why Capacity Is Limited */}
+        <section className="w-full bg-white border-y border-neutral-100">
+          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
+            <div className="space-y-8 text-neutral-600 font-light text-lg leading-relaxed">
+              <h2 className="text-2xl md:text-3xl font-light text-neutral-900 mb-2">
+                Why Capacity Is Limited
+              </h2>
+              <p>
+                I&apos;m not trying to scale this to 500 people.
+              </p>
+              <p>
+                The goal is a small, professional group where signal-to-noise stays high
+                and the environment stays focused.
+              </p>
+              <div className="space-y-6 pt-4">
+                <p className="font-medium text-neutral-900 border-l-2 border-neutral-300 pl-4">
+                  Once founding capacity fills (25 members), that rate is gone permanently.
+                </p>
+                <p className="font-medium text-neutral-900 border-l-2 border-neutral-300 pl-4">
+                  Charter tier (next 25) opens immediately after at $750/month — also locked forever.
+                </p>
+                <p className="font-medium text-neutral-900 border-l-2 border-neutral-300 pl-4">
+                  After 50 total members, new entry moves to $900+ with no rate lock.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 5 - Who This Is For */}
+        <section className="w-full bg-[#FAFAFA]">
+          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
+            <div className="space-y-12">
+
+              <div className="grid md:grid-cols-2 gap-12">
+                {/* Ideal Members */}
+                <div className="space-y-6">
+                  <h3 className="text-xl font-light text-neutral-900">
+                    Ideal members:
+                  </h3>
+                  <ul className="space-y-3 text-neutral-600 font-light">
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Experienced traders who want institutional perspective</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Portfolio managers tracking multiple markets</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Serious independents building real edge</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Macro-focused operators</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Not Ideal */}
+                <div className="space-y-6">
+                  <h3 className="text-xl font-light text-neutral-900">
+                    Not ideal:
+                  </h3>
+                  <ul className="space-y-3 text-neutral-600 font-light">
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Retail signal seekers</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Passive observers</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Anyone expecting guaranteed profits</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Traders looking for hand-holding</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p className="text-center font-medium text-neutral-900 text-lg border-t border-neutral-200 pt-12">
+                This is for people who want to level up their process — not outsource their thinking.
+              </p>
+
+            </div>
+          </div>
+        </section>
+
+        {/* Section 6 - About Mark */}
+        <section className="w-full bg-white border-y border-neutral-100">
+          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
+            <div className="space-y-12">
+
+              <div className="space-y-6">
+                <h2 className="text-2xl md:text-3xl font-light text-neutral-900">
+                  Led by Mark Schaefer
+                </h2>
+                <p className="text-xl text-neutral-600 font-light leading-relaxed">
+                  30+ years managing institutional capital across FX, futures, and systematic strategies.
                 </p>
               </div>
 
-              {/* Social Links */}
-              <div className="flex items-center justify-end gap-4">
-                <Link
-                  href="https://twitter.com/schaef45809"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-neutral-400 hover:text-white transition-colors"
-                  aria-label="X (Twitter)"
-                >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                  </svg>
-                </Link>
-                <Link
-                  href="https://www.linkedin.com/in/markschaefer4/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-neutral-400 hover:text-white transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
+              <div className="grid md:grid-cols-2 gap-12 pt-8">
+                {/* Career */}
+                <div className="space-y-6">
+                  <h3 className="text-sm font-semibold uppercase tracking-widest text-neutral-500">
+                    Career:
+                  </h3>
+                  <ul className="space-y-4 text-neutral-600 font-light">
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span><strong>Barclays</strong> — VP, Currency Trading</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span><strong>ABN Amro</strong> — 9 years, Proprietary FX Trading</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <div className="space-y-2">
+                        <span><strong>Eagle Trading Systems</strong> — PM managing systematic FX portfolios exceeding $300M at peak allocation</span>
+                        <ul className="pl-4 space-y-2 text-sm text-neutral-500 border-l px-4 border-neutral-200 mt-2">
+                          <li>- Built mean-reversion currency program from scratch in 2005</li>
+                          <li>- Delivered +25% in 2008, +23% in 2009 (during financial crisis)</li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span><strong>Centiva Capital</strong> — Systematic Currency Strategies</span>
+                    </li>
+                  </ul>
+                </div>
 
-            {/* Bottom Bar */}
-            <div className="mt-4 pt-4 border-t border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-neutral-300">
-              <p>© 2026 Meridian Compass. All rights reserved.</p>
-              {/* Theme toggle for mobile */}
-              <div className="md:hidden">
-                <ThemeToggle />
+                {/* Currently */}
+                <div className="space-y-6">
+                  <h3 className="text-sm font-semibold uppercase tracking-widest text-neutral-500">
+                    Currently:
+                  </h3>
+                  <ul className="space-y-4 text-neutral-600 font-light">
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Managing capital through private SMA relationships</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Providing daily market analysis to hedge funds, refiners, and institutional energy clients</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-400 mt-1">•</span>
+                      <span>Sharing institutional frameworks independently through Meridian Compass</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <Link
-                href="https://www.nandann.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hidden md:block hover:text-white transition-colors"
-              >
-                Website by Nandann Creative
-              </Link>
+
+              <p className="text-center font-medium text-neutral-900 text-lg border-t border-neutral-200 pt-12">
+                I don&apos;t reveal proprietary strategies — but I do share how institutional desks read structure, positioning, and risk in real time.
+              </p>
+
             </div>
+          </div>
+        </section>
+
+        {/* Section 7 - How It's Delivered */}
+        <section className="w-full bg-[#FAFAFA]">
+          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
+            <div className="space-y-12">
+              <h2 className="text-2xl md:text-3xl font-light text-neutral-900">
+                How It&apos;s Delivered
+              </h2>
+
+              <div className="space-y-6">
+                <p className="text-lg font-medium text-neutral-900">
+                  Private Telegram channel
+                </p>
+                <ul className="space-y-4 text-neutral-600 font-light text-lg">
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>Broadcast format (one-way communication)</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>Real-time context as markets develop</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>No group chat — preserves focus and signal quality</span>
+                  </li>
+                </ul>
+              </div>
+
+              <p className="font-medium text-neutral-900 text-lg border-t border-neutral-200 pt-12">
+                You get professional market intelligence when it matters — not social media noise.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 8 - Why Act Now */}
+        <section className="w-full bg-white border-y border-neutral-100">
+          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
+            <div className="space-y-8 text-neutral-600 font-light text-lg leading-relaxed">
+              <h2 className="text-2xl md:text-3xl font-light text-neutral-900 mb-2">
+                Why Act Now
+              </h2>
+
+              <p>
+                Founding tier closes permanently at 25 members.
+              </p>
+
+              <div className="space-y-4 pt-4">
+                <p className="font-medium text-neutral-900">Once filled:</p>
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>Founding rate ($600) never reopens</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>Charter tier ($750) activates immediately</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>After 50 total members, entry moves to $900+ with no lock</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="pt-8 space-y-6">
+                <p>
+                  10 beta members are already inside and counting toward the 25.
+                </p>
+                <p>
+                  That leaves 15 founding spots.
+                </p>
+                <p className="font-medium text-neutral-900 border-l-2 border-neutral-300 pl-4">
+                  When those fill, the $600 rate is gone permanently.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 9 - Final CTA */}
+        <section className="w-full bg-[#FAFAFA]">
+          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32 text-center">
+            <div className="space-y-12">
+              <h2 className="text-2xl md:text-3xl font-light text-neutral-900">
+                For Traders Who Want Institutional Context — Not Retail Noise
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8 text-left max-w-3xl mx-auto">
+                {/* Founding */}
+                <div className="p-8 bg-white border border-neutral-200 rounded-lg shadow-sm space-y-6">
+                  <p className="font-semibold text-neutral-900 border-b border-neutral-100 pb-4">
+                    Founding access secures:
+                  </p>
+                  <ul className="space-y-3 text-neutral-600 font-light">
+                    <li className="flex gap-3">
+                      <span className="text-neutral-900 mt-1">✓</span>
+                      <span>$600/month permanent rate</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-900 mt-1">✓</span>
+                      <span>Priority status</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-900 mt-1">✓</span>
+                      <span>Locked forever — never increases</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Charter */}
+                <div className="p-8 bg-white border border-neutral-200 rounded-lg shadow-sm space-y-6">
+                  <p className="font-semibold text-neutral-900 border-b border-neutral-100 pb-4">
+                    Charter access (next 25 members) secures:
+                  </p>
+                  <ul className="space-y-3 text-neutral-600 font-light">
+                    <li className="flex gap-3">
+                      <span className="text-neutral-900 mt-1">✓</span>
+                      <span>$750/month permanent rate</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-900 mt-1">✓</span>
+                      <span>Opens when Founding closes</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-neutral-900 mt-1">✓</span>
+                      <span>Locked forever — never increases</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="pt-8 max-w-sm mx-auto space-y-4">
+                <Link
+                  href="/"
+                  className="w-full py-4 bg-neutral-900 text-white rounded-md hover:bg-black font-medium transition-colors block text-center"
+                >
+                  Request Founding Access
+                </Link>
+                <p className="text-sm text-neutral-500">
+                  Admission is selective. Applications reviewed confidentially.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 10 - Footer */}
+        <footer className="w-full bg-white border-t border-neutral-200 text-neutral-900">
+          <div className="max-w-4xl mx-auto px-6 py-8 text-center text-sm text-neutral-500 font-light">
+            <p>© 2026 Meridian Compass</p>
           </div>
         </footer>
       </main>
