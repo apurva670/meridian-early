@@ -93,8 +93,7 @@ export default function Home() {
                 </h2>
                 <div className="space-y-4 text-neutral-600 font-light text-lg leading-relaxed">
                   <p>
-                    I currently provide daily market analysis to hedge funds, refiners, and
-                    energy clients through institutional channels.
+                    I currently provide real-time market analysis to hedge funds, refiners, and institutional energy clients.
                   </p>
                   <p>
                     Opening limited private access to the same real-time context — structural
