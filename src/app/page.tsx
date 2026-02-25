@@ -450,24 +450,6 @@ export default function Home() {
                 Founding tier closes permanently at 25 members.
               </p>
 
-              <div className="space-y-4 pt-4">
-                <p className="font-medium text-neutral-900">Once filled:</p>
-                <ul className="space-y-3">
-                  <li className="flex gap-3">
-                    <span className="text-neutral-400 mt-1">•</span>
-                    <span>Founding rate ($600) never reopens</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-neutral-400 mt-1">•</span>
-                    <span>Charter tier ($750) activates immediately</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-neutral-400 mt-1">•</span>
-                    <span>After 50 total members, entry moves to $900+ with no lock</span>
-                  </li>
-                </ul>
-              </div>
-
               <div className="pt-8 space-y-6">
                 <p>
                   10 beta members are already inside and counting toward the 25.
