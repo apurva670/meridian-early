@@ -57,21 +57,7 @@ export default function Home() {
                 </p>
 
 
-                {/* Testimonial */}
-                <div className="mt-8 space-y-4 p-8 bg-white border border-neutral-100 shadow-sm rounded-lg">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">What Members Say</p>
-                  <div className="relative">
-                    <p className="text-neutral-600 text-sm leading-relaxed italic">
-                      &ldquo;The Meridian Compass group has been a total game changer to how I look at the markets everyday. Having an insight to how a real portfolio manager who's managed substantial assets goes about the market every morning. In this group I was taught process and structure in real time without signals so I really learn the market. These insights on bitcoin these past months have been nothing less than perfect.&rdquo;
-                    </p>
-                    <div className="mt-4 flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-full bg-neutral-100 flex items-center justify-center text-xs font-medium text-neutral-600">
-                        BD
-                      </div>
-                      <p className="text-sm font-medium text-neutral-900">Brian Delahanty</p>
-                    </div>
-                  </div>
-                </div>
+
               </div>
 
               {/* Right Column - Form */}
