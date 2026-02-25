@@ -243,21 +243,23 @@ export default function Home() {
                 Why Capacity Is Limited
               </h2>
               <p>
-                I&apos;m not trying to scale this to 500 people.
+                Not trying to scale this to 500 people.
               </p>
               <p>
-                The goal is a small, professional group where signal-to-noise stays high
-                and the environment stays focused.
+                Small professional group. Focused environment.
               </p>
               <div className="space-y-6 pt-4">
                 <p className="font-medium text-neutral-900 border-l-2 border-neutral-300 pl-4">
-                  Once founding capacity fills (25 members), that rate is gone permanently.
+                  Once founding fills (25 members), that rate is gone permanently.
                 </p>
                 <p className="font-medium text-neutral-900 border-l-2 border-neutral-300 pl-4">
-                  Charter tier (next 25) opens immediately after at $750/month — also locked forever.
+                  Charter tier (next 25) opens at $800/month — also locked forever.
                 </p>
                 <p className="font-medium text-neutral-900 border-l-2 border-neutral-300 pl-4">
-                  After 50 total members, new entry moves to $900+ with no rate lock.
+                  After 50 members, entry moves to $1,000/month standard pricing.
+                </p>
+                <p className="font-medium text-neutral-900 border-l-2 border-neutral-300 pl-4">
+                  Once in at a price, that rate stays as long as membership remains continuous.
                 </p>
               </div>
             </div>
