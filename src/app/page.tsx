@@ -354,25 +354,25 @@ export default function Home() {
                   <ul className="space-y-4 text-neutral-600 font-light">
                     <li className="flex gap-3">
                       <span className="text-neutral-400 mt-1">•</span>
-                      <span><strong>Barclays</strong> — VP, Currency Trading</span>
+                      <span><strong>Barclays</strong> — Head British Pound Trader/Market Maker</span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-neutral-400 mt-1">•</span>
-                      <span><strong>ABN Amro</strong> — 9 years, Proprietary FX Trading</span>
+                      <span><strong>ABN Amro</strong> — Proprietary FX Trading</span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-neutral-400 mt-1">•</span>
                       <div className="space-y-2">
-                        <span><strong>Eagle Trading Systems</strong> — PM managing systematic FX portfolios exceeding $300M at peak allocation</span>
+                        <span><strong>Eagle Trading Systems</strong> — PM Managing Systematic FX and Futures Strategies (hundreds of millions)</span>
                         <ul className="pl-4 space-y-2 text-sm text-neutral-500 border-l px-4 border-neutral-200 mt-2">
-                          <li>- Built mean-reversion currency program from scratch in 2005</li>
-                          <li>- Delivered +25% in 2008, +23% in 2009 (during financial crisis)</li>
+                          <li>- Built and managed currency-only strategy that raised over $300M during the financial crisis and delivered +25% in 2008 and +23% in 2009</li>
+                          <li>- Managed mean-reversion futures strategy within a predominantly trend-following futures program as a diversifier</li>
                         </ul>
                       </div>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-neutral-400 mt-1">•</span>
-                      <span><strong>Centiva Capital</strong> — Systematic Currency Strategies</span>
+                      <span><strong>Centiva Capital</strong> — PM Systematic Currencies</span>
                     </li>
                   </ul>
                 </div>
@@ -385,15 +385,11 @@ export default function Home() {
                   <ul className="space-y-4 text-neutral-600 font-light">
                     <li className="flex gap-3">
                       <span className="text-neutral-400 mt-1">•</span>
-                      <span>Managing capital through private SMA relationships</span>
+                      <span>Providing real-time actionable analysis in the energy markets (crude, refined products, nat gas — futures, options, and CSOs) to hedge funds, refiners, and institutional energy clients</span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-neutral-400 mt-1">•</span>
-                      <span>Providing daily market analysis to hedge funds, refiners, and institutional energy clients</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span>Sharing institutional frameworks independently through Meridian Compass</span>
+                      <span>Sharing institutional frameworks for futures, currencies, and crypto independently through Meridian Compass</span>
                     </li>
                   </ul>
                 </div>
