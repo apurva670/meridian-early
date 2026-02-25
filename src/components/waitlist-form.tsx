@@ -6,13 +6,10 @@ import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 interface WaitlistFormData {
     email: string;
-    tradingPreference: string;
-    interestLevel: string;
     turnstileToken: string;
 }
 
@@ -39,20 +36,14 @@ interface WaitlistFormProps {
 
 export function WaitlistForm({ turnstileSiteKey }: WaitlistFormProps) {
     const [email, setEmail] = useState("");
-    const [tradingPreference, setTradingPreference] = useState("");
-    const [interestLevel, setInterestLevel] = useState("");
     const [turnstileToken, setTurnstileToken] = useState("");
     const [formError, setFormError] = useState("");
     const turnstileRef = useRef<TurnstileInstance>(null);
-
-
 
     const mutation = useMutation({
         mutationFn: submitWaitlist,
         onSuccess: () => {
             setEmail("");
-            setTradingPreference("");
-            setInterestLevel("");
             setTurnstileToken("");
             setFormError("");
             turnstileRef.current?.reset();
@@ -70,21 +61,12 @@ export function WaitlistForm({ turnstileSiteKey }: WaitlistFormProps) {
             setFormError("Email is required");
             return;
         }
-        if (!tradingPreference) {
-            setFormError("Please select what you primarily trade");
-            return;
-        }
-        if (!interestLevel) {
-            setFormError("Please select your interest level");
-            return;
-        }
         if (!turnstileToken) {
             setFormError("Please complete the security check");
             return;
         }
 
-
-        mutation.mutate({ email, tradingPreference, interestLevel, turnstileToken });
+        mutation.mutate({ email, turnstileToken });
     };
 
     if (mutation.isSuccess) {
@@ -117,7 +99,6 @@ export function WaitlistForm({ turnstileSiteKey }: WaitlistFormProps) {
         );
     }
 
-    // Use the prop if available, otherwise try env (fallback), otherwise empty
     const siteKey = turnstileSiteKey || process.env.NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY || "";
 
     return (
@@ -128,11 +109,10 @@ export function WaitlistForm({ turnstileSiteKey }: WaitlistFormProps) {
                 </h2>
             </div>
             <CardContent className="pt-6">
-                {/* Text Block */}
                 <div className="space-y-6 mb-8 text-neutral-800 text-sm">
                     <div>
                         <p className="font-semibold text-neutral-900 mb-1">25 Founding Members</p>
-                        <ul className="list-disc pl-5 space-y-0.5 text-neutral-600">
+                        <ul className="list-none space-y-0.5 text-neutral-600">
                             <li>10 already inside</li>
                             <li>15 positions remaining</li>
                         </ul>
@@ -140,34 +120,29 @@ export function WaitlistForm({ turnstileSiteKey }: WaitlistFormProps) {
 
                     <div>
                         <p className="font-semibold text-neutral-900 mb-1">Founding rate: $600/month</p>
-                        <ul className="space-y-0.5 text-neutral-600">
-                            <li>✓ Locked permanently</li>
-                            <li>✓ Never increases</li>
-                            <li>✓ Founding status</li>
+                        <ul className="list-none space-y-0.5 text-neutral-600">
+                            <li>Locked permanently</li>
                         </ul>
                     </div>
-
-                    <p className="text-neutral-600">
-                        When the 25 founding spots are filled, admission moves to the Charter tier.
-                    </p>
 
                     <div>
                         <p className="font-semibold text-neutral-900 mb-1">Charter Tier — Next 25 members</p>
-                        <ul className="list-disc pl-5 space-y-0.5 text-neutral-600">
-                            <li>$750/month</li>
-                            <li>Locked permanently</li>
+                        <ul className="list-none space-y-0.5 text-neutral-600">
+                            <li>$800/month</li>
                             <li>Opens when Founding closes</li>
                         </ul>
                     </div>
+                    <div>
+                        <p className="text-neutral-600">After 50 total members: $1,000/month standard pricing.</p>
+                    </div>
 
-                    <p className="text-neutral-600 border-t border-neutral-100 pt-6">
-                        After 50 total members, entry pricing moves to $900+ with no rate lock.
+                    <p className="font-medium text-neutral-900 border-t border-neutral-100 pt-6">
+                        Once in at a price, that rate stays as long as membership remains continuous.
                     </p>
                 </div>
 
                 <div className="pt-2">
                     <form onSubmit={handleSubmit} className="space-y-5">
-                        {/* Email Field */}
                         <div className="space-y-2">
                             <Label htmlFor="email" className="text-neutral-700">
                                 Email Address <span className="text-red-500">*</span>
@@ -182,72 +157,10 @@ export function WaitlistForm({ turnstileSiteKey }: WaitlistFormProps) {
                             />
                         </div>
 
-                        {/* Trading Preference */}
-                        <div className="space-y-3">
-                            <Label className="text-neutral-700">
-                                What do you primarily trade? <span className="text-red-500">*</span>
-                            </Label>
-                            <RadioGroup
-                                value={tradingPreference}
-                                onValueChange={setTradingPreference}
-                                className="space-y-2"
-                            >
-                                {["Crypto", "FX", "Futures"].map((option) => (
-                                    <div key={option} className="flex items-center space-x-3">
-                                        <RadioGroupItem
-                                            value={option}
-                                            id={`trade-${option}`}
-                                            className="border-neutral-300 text-neutral-900"
-                                        />
-                                        <Label
-                                            htmlFor={`trade-${option}`}
-                                            className="text-neutral-600 cursor-pointer"
-                                        >
-                                            {option}
-                                        </Label>
-                                    </div>
-                                ))}
-                            </RadioGroup>
-                        </div>
-
-                        {/* Interest Level */}
-                        <div className="space-y-3">
-                            <Label className="text-neutral-700">
-                                Interest level: <span className="text-red-500">*</span>
-                            </Label>
-                            <RadioGroup
-                                value={interestLevel}
-                                onValueChange={setInterestLevel}
-                                className="space-y-2"
-                            >
-                                {[
-                                    { value: "yes", label: "Definitely interested" },
-                                    { value: "maybe", label: "Want to learn more" },
-                                    { value: "exploring", label: "Just exploring" },
-                                ].map((option) => (
-                                    <div key={option.value} className="flex items-center space-x-3">
-                                        <RadioGroupItem
-                                            value={option.value}
-                                            id={`interest-${option.value}`}
-                                            className="border-neutral-300 text-neutral-900"
-                                        />
-                                        <Label
-                                            htmlFor={`interest-${option.value}`}
-                                            className="text-neutral-600 cursor-pointer"
-                                        >
-                                            {option.label}
-                                        </Label>
-                                    </div>
-                                ))}
-                            </RadioGroup>
-                        </div>
-
-                        {/* Error Message */}
                         {formError && (
                             <p className="text-red-500 text-sm">{formError}</p>
                         )}
 
-                        {/* Turnstile */}
                         <div className="flex justify-center -my-3 scale-75 origin-center h-12 overflow-hidden">
                             {siteKey ? (
                                 <Turnstile
@@ -266,7 +179,6 @@ export function WaitlistForm({ turnstileSiteKey }: WaitlistFormProps) {
                             )}
                         </div>
 
-                        {/* Submit Button */}
                         <div className="space-y-2">
                             <Button
                                 type="submit"

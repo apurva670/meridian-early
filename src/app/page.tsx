@@ -36,7 +36,7 @@ export default function Home() {
               <div className="space-y-8">
                 <div className="space-y-4">
                   <span className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
-                    MERIDIAN COMPASS — PRIVATE INTELLIGENCE FEED
+                    MERIDIAN COMPASS
                   </span>
                   <h1 className="text-2xl md:text-3xl font-light leading-tight text-neutral-900">
                     Private Institutional Market Intelligence — Delivered Daily
@@ -45,13 +45,10 @@ export default function Home() {
 
                 <div className="space-y-6 text-neutral-600 leading-relaxed font-light text-lg">
                   <p>
-                    Real-time market context from a 30-year institutional PM who currently
-                    provides daily analysis to hedge funds, refiners, and energy clients —
-                    and managed $300M+ systematic portfolios through multiple crisis cycles.
+                    Real-time market context from a 30-year institutional PM currently providing actionable energy market analysis to refiners, hedge funds, and institutional clients — and who managed a currency-only strategy during the financial crisis, raising several hundred million dollars and delivering high double-digit returns in both 2008 and 2009.
                   </p>
                   <p>
-                    The same structural analysis and risk frameworks shared with institutional
-                    clients — now available privately to serious individual operators.
+                    The same institutional frameworks — now available to individual traders.
                   </p>
                 </div>
 
@@ -551,7 +548,26 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Section 10 - Footer */}
+        {/* Section 10 - Disclaimer */}
+        <section className="w-full bg-[#FAFAFA] border-t border-neutral-200">
+          <div className="max-w-4xl mx-auto px-6 py-12 md:py-16 text-xs text-neutral-500 font-light space-y-4 leading-relaxed">
+            <p className="font-semibold text-neutral-600 mb-2">IMPORTANT DISCLAIMER</p>
+            <p>
+              This service is for educational and informational purposes only and does not constitute investment advice, trading recommendations, or solicitation to buy or sell any financial instruments. All content represents the author&apos;s personal analysis and opinions and should not be construed as professional financial advice.
+            </p>
+            <p>
+              Trading futures, currencies, and cryptocurrencies involves substantial risk of loss and is not suitable for all investors. You should carefully consider whether trading is appropriate for you in light of your experience, objectives, financial resources, and other relevant circumstances. Past performance is not indicative of future results.
+            </p>
+            <p>
+              The author may hold positions in markets discussed in this service. Members are solely responsible for their own trading decisions and should conduct their own research and consult with qualified financial advisors before making any investment decisions.
+            </p>
+            <p>
+              By subscribing to Meridian Compass, you acknowledge that you understand these risks and agree that Mark Schaefer and Meridian Compass are not liable for any trading losses or damages that may result from using this information.
+            </p>
+          </div>
+        </section>
+
+        {/* Section 11 - Footer */}
         <footer className="w-full bg-white border-t border-neutral-200 text-neutral-900">
           <div className="max-w-4xl mx-auto px-6 py-8 text-center text-sm text-neutral-500 font-light">
             <p>© 2026 Meridian Compass</p>
