@@ -179,19 +179,19 @@ export default function Home() {
                   <ul className="space-y-3 text-neutral-600 font-light">
                     <li className="flex gap-3">
                       <span className="text-red-500 mt-1">❌</span>
-                      <span>Signal chasers</span>
+                      <span>Signal services or alert-based trading</span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-red-500 mt-1">❌</span>
-                      <span>Beginners looking for shortcuts</span>
+                      <span>Traders new to markets</span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-red-500 mt-1">❌</span>
-                      <span>Copy traders</span>
+                      <span>Those seeking trade replication</span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-red-500 mt-1">❌</span>
-                      <span>Anyone seeking &quot;holy grail&quot; setups</span>
+                      <span>Hand-holding or trade-by-trade guidance</span>
                     </li>
                   </ul>
                 </div>
@@ -216,15 +216,20 @@ export default function Home() {
                     </li>
                     <li className="flex gap-3">
                       <span className="text-neutral-900 mt-1">✓</span>
-                      <span>Learning to think like a PM</span>
+                      <span>Learning to think like a portfolio manager</span>
                     </li>
                   </ul>
                 </div>
               </div>
 
-              <p className="text-center font-medium text-neutral-900 text-lg border-t border-neutral-200 pt-12">
-                You learn to read markets independently — not follow someone else&apos;s calls.
-              </p>
+              <div className="text-center space-y-4 border-t border-neutral-200 pt-12">
+                <p className="font-medium text-neutral-900 text-lg">
+                  This is not for beginners or signal chasers.
+                </p>
+                <p className="font-medium text-neutral-900 text-lg">
+                  Learn to read markets in real time — not follow calls.
+                </p>
+              </div>
 
             </div>
           </div>
