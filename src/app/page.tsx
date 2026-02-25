@@ -432,7 +432,7 @@ export default function Home() {
               </div>
 
               <p className="font-medium text-neutral-900 text-lg border-t border-neutral-200 pt-12">
-                You get professional market intelligence when it matters — not social media noise.
+                Professional market intelligence delivered in real time.
               </p>
             </div>
           </div>
