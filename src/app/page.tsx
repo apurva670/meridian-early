@@ -394,11 +394,6 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-
-              <p className="text-center font-medium text-neutral-900 text-lg border-t border-neutral-200 pt-12">
-                I don&apos;t reveal proprietary strategies — but I do share how institutional desks read structure, positioning, and risk in real time.
-              </p>
-
             </div>
           </div>
         </section>
