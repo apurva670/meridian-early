@@ -469,28 +469,29 @@ export default function Home() {
         <section className="w-full bg-[#FAFAFA]">
           <div className="max-w-4xl mx-auto px-6 py-20 md:py-32 text-center">
             <div className="space-y-12">
-              <h2 className="text-2xl md:text-3xl font-light text-neutral-900">
-                For Traders Who Want Institutional Context — Not Retail Noise
-              </h2>
+              <div className="space-y-6 text-xl md:text-2xl font-light text-neutral-900">
+                <p>
+                  In a world of competing narratives, conflicting data, and constant noise — Meridian Compass teaches you how to filter what matters.
+                </p>
+                <p>
+                  Taught by a PM actively managing assets and advising institutional clients — sharing the same frameworks I use in my institutional work.
+                </p>
+              </div>
 
               <div className="grid md:grid-cols-2 gap-8 text-left max-w-3xl mx-auto">
                 {/* Founding */}
                 <div className="p-8 bg-white border border-neutral-200 rounded-lg shadow-sm space-y-6">
                   <p className="font-semibold text-neutral-900 border-b border-neutral-100 pb-4">
-                    Founding access secures:
+                    Founding access:
                   </p>
                   <ul className="space-y-3 text-neutral-600 font-light">
                     <li className="flex gap-3">
                       <span className="text-neutral-900 mt-1">✓</span>
-                      <span>$600/month permanent rate</span>
+                      <span>$600/month locked permanently</span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-neutral-900 mt-1">✓</span>
-                      <span>Priority status</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-900 mt-1">✓</span>
-                      <span>Locked forever — never increases</span>
+                      <span>15 spots remaining</span>
                     </li>
                   </ul>
                 </div>
@@ -498,35 +499,43 @@ export default function Home() {
                 {/* Charter */}
                 <div className="p-8 bg-white border border-neutral-200 rounded-lg shadow-sm space-y-6">
                   <p className="font-semibold text-neutral-900 border-b border-neutral-100 pb-4">
-                    Charter access (next 25 members) secures:
+                    Charter access (next 25 members):
                   </p>
                   <ul className="space-y-3 text-neutral-600 font-light">
                     <li className="flex gap-3">
                       <span className="text-neutral-900 mt-1">✓</span>
-                      <span>$750/month permanent rate</span>
+                      <span>$800/month</span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-neutral-900 mt-1">✓</span>
                       <span>Opens when Founding closes</span>
                     </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-900 mt-1">✓</span>
-                      <span>Locked forever — never increases</span>
-                    </li>
                   </ul>
                 </div>
               </div>
 
-              <div className="pt-8 max-w-sm mx-auto space-y-4">
+              <div className="pt-8 max-w-2xl mx-auto space-y-6 text-neutral-600 font-light text-sm md:text-base leading-relaxed">
+                <p className="font-medium text-lg text-neutral-900">
+                  Interested in joining Meridian Compass?
+                </p>
+                <p>
+                  If this aligns with how you approach the markets and you&apos;re looking for deeper real-time context, you can request access below.
+                </p>
+                <p>
+                  Meridian Compass is intentionally kept small to maintain focus and quality, so access is granted selectively.
+                </p>
+                <p>
+                  If you&apos;re unsure whether it&apos;s the right fit, feel free to reach out with questions before applying.
+                </p>
+              </div>
+
+              <div className="max-w-sm mx-auto">
                 <Link
                   href="/"
-                  className="w-full py-4 bg-neutral-900 text-white rounded-md hover:bg-black font-medium transition-colors block text-center"
+                  className="w-full py-4 bg-neutral-900 text-white rounded-md hover:bg-black font-medium transition-colors block text-center shadow-sm"
                 >
                   Request Founding Access
                 </Link>
-                <p className="text-sm text-neutral-500">
-                  Admission is selective. Applications reviewed confidentially.
-                </p>
               </div>
             </div>
           </div>
