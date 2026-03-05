@@ -45,10 +45,10 @@ export default function Home() {
 
                 <div className="space-y-6 text-neutral-600 leading-relaxed font-light text-lg">
                   <p>
-                    Real-time market context from a 30-year institutional PM currently providing actionable energy market analysis to refiners, hedge funds, and institutional clients — and who managed a currency-only strategy during the financial crisis, raising several hundred million dollars and delivering high double-digit returns in both 2008 and 2009.
+                    Real-time market structure, positioning, and risk context from a 30-year institutional portfolio manager.
                   </p>
                   <p>
-                    The same institutional frameworks — now available to individual traders.
+                    The same institutional frameworks I use in managing capital — now shared privately with a focused group of independent traders.
                   </p>
                 </div>
 
@@ -68,186 +68,61 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Section 2 - What This Is */}
+        {/* Section 2 - Objective */}
         <section className="w-full bg-white border-y border-neutral-100">
           <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
             <div className="space-y-12">
 
               <div className="space-y-6">
                 <h2 className="text-2xl md:text-3xl font-light text-neutral-900">
-                  Real-Time Institutional Analysis — Not Retail Noise
+                  Objective
                 </h2>
                 <div className="space-y-4 text-neutral-600 font-light text-lg leading-relaxed">
                   <p>
-                    I currently provide real-time market analysis to hedge funds, refiners, and institutional energy clients.
-                  </p>
-                  <p>
-                    Opening limited private access to the same real-time context — structural
-                    setups, positioning reads, and risk frameworks delivered as markets develop.
-                  </p>
-                  <p className="font-medium text-neutral-900">
-                    Not hours later. Not delayed recaps. Real-time professional intelligence.
+                    To create an environment that simulates sitting on a real trading desk — learning how to map structure, identify key levels, and trade around them in real time.
                   </p>
                 </div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-12 pt-12 border-t border-neutral-200">
-                {/* What members receive */}
-                <div className="space-y-6">
-                  <h3 className="text-sm font-semibold uppercase tracking-widest text-neutral-500">
-                    What members receive:
-                  </h3>
-                  <ul className="space-y-3 text-neutral-600 font-light">
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span>Real-time context when actual setups are developing — not forced posts to fill space</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span>Not just levels — learn HOW to identify structure, positioning, and inflection points yourself</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span>Institutional frameworks for reading momentum, divergence, and market narrative</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span>Context across BTC, FX, and futures</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span>Private Telegram broadcast (one-way, no chat noise)</span>
-                    </li>
-                  </ul>
-                </div>
+              <div className="pt-12 border-t border-neutral-200">
+                <ul className="space-y-4 text-neutral-600 font-light text-lg">
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>Real-time context as inflection points develop — not forced daily posts</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>Clear structure mapping: trend, liquidity, positioning, exhaustion</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>Institutional frameworks for momentum, divergence, and narrative shifts</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>Cross-market perspective across BTC, FX, and futures</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-neutral-400 mt-1">•</span>
+                    <span>Private Telegram broadcast (one-way, no group chat noise)</span>
+                  </li>
+                </ul>
+              </div>
 
-                {/* Format */}
-                <div className="space-y-6">
-                  <h3 className="text-sm font-semibold uppercase tracking-widest text-neutral-500">
-                    Format:
-                  </h3>
-                  <ul className="space-y-3 text-neutral-600 font-light">
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span>Private Telegram channel (broadcast, one-way)</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span>Updates when markets are moving or setups developing</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span>Could be multiple updates per day or quiet when nothing's there</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span>No manufactured content — only when it matters</span>
-                    </li>
-                  </ul>
+              <div className="space-y-6 pt-12 border-t border-neutral-200">
+                <p className="text-lg text-neutral-600 font-light">
+                  No constant posting. No recycled content. No signal chasing.
+                </p>
+                <div className="space-y-2">
+                  <p className="font-medium text-neutral-900 text-xl">
+                    This is not a signal service.
+                  </p>
+                  <p className="text-lg text-neutral-600 font-light">
+                    You will learn how to map structure and read positioning in real time.
+                  </p>
                 </div>
               </div>
 
-            </div>
-          </div>
-        </section>
-
-        {/* Section 3 - What This Is Not */}
-        <section className="w-full bg-[#FAFAFA]">
-          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
-            <div className="space-y-12">
-
-              <div className="grid md:grid-cols-2 gap-12">
-                {/* Not For */}
-                <div className="space-y-6">
-                  <h3 className="text-xl font-light text-neutral-900">
-                    Not for:
-                  </h3>
-                  <ul className="space-y-3 text-neutral-600 font-light">
-                    <li className="flex gap-3">
-                      <span className="text-red-500 mt-1">❌</span>
-                      <span>Signal services or alert-based trading</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-red-500 mt-1">❌</span>
-                      <span>Traders new to markets</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-red-500 mt-1">❌</span>
-                      <span>Those seeking trade replication</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-red-500 mt-1">❌</span>
-                      <span>Hand-holding or trade-by-trade guidance</span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* This Is */}
-                <div className="space-y-6">
-                  <h3 className="text-xl font-light text-neutral-900">
-                    This is:
-                  </h3>
-                  <ul className="space-y-3 text-neutral-600 font-light">
-                    <li className="flex gap-3">
-                      <span className="text-neutral-900 mt-1">✓</span>
-                      <span>Market structure analysis</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-900 mt-1">✓</span>
-                      <span>Positioning context</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-900 mt-1">✓</span>
-                      <span>Institutional frameworks</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-900 mt-1">✓</span>
-                      <span>Learning to think like a portfolio manager</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="text-center space-y-4 border-t border-neutral-200 pt-12">
-                <p className="font-medium text-neutral-900 text-lg">
-                  This is not for beginners or signal chasers.
-                </p>
-                <p className="font-medium text-neutral-900 text-lg">
-                  Learn to read markets in real time — not follow calls.
-                </p>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        {/* Section 4 - Why Capacity Is Limited */}
-        <section className="w-full bg-white border-y border-neutral-100">
-          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
-            <div className="space-y-8 text-neutral-600 font-light text-lg leading-relaxed">
-              <h2 className="text-2xl md:text-3xl font-light text-neutral-900 mb-2">
-                Why Capacity Is Limited
-              </h2>
-              <p>
-                Not trying to scale this to 500 people.
-              </p>
-              <p>
-                Small professional group. Focused environment.
-              </p>
-              <div className="space-y-6 pt-4">
-                <p className="font-medium text-neutral-900 border-l-2 border-neutral-300 pl-4">
-                  Once founding fills (25 members), that rate is gone permanently.
-                </p>
-                <p className="font-medium text-neutral-900 border-l-2 border-neutral-300 pl-4">
-                  Charter tier (next 25) opens at $800/month — also locked forever.
-                </p>
-                <p className="font-medium text-neutral-900 border-l-2 border-neutral-300 pl-4">
-                  After 50 members, entry moves to $1,000/month standard pricing.
-                </p>
-                <p className="font-medium text-neutral-900 border-l-2 border-neutral-300 pl-4">
-                  Once in at a price, that rate stays as long as membership remains continuous.
-                </p>
-              </div>
             </div>
           </div>
         </section>
@@ -260,198 +135,87 @@ export default function Home() {
 
               <div className="space-y-6">
                 <h2 className="text-2xl md:text-3xl font-light text-neutral-900">
-                  Led by Mark Schaefer
+                  ABOUT MARK SCHAEFER
                 </h2>
-                <p className="text-xl text-neutral-600 font-light leading-relaxed">
-                  30+ years managing institutional capital across FX, futures, and systematic strategies.
-                </p>
-              </div>
+                <div className="text-lg text-neutral-600 font-light leading-relaxed space-y-6">
+                  <p>
+                    30+ years managing institutional capital across FX, futures, and systematic strategies.
+                  </p>
 
-              <div className="grid md:grid-cols-2 gap-12 pt-8">
-                {/* Career */}
-                <div className="space-y-6">
-                  <h3 className="text-sm font-semibold uppercase tracking-widest text-neutral-500">
-                    Career:
-                  </h3>
-                  <ul className="space-y-4 text-neutral-600 font-light">
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span><strong>Barclays</strong> — Head British Pound Trader/Market Maker</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span><strong>ABN Amro</strong> — Proprietary FX Trading</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <div className="space-y-2">
-                        <span><strong>Eagle Trading Systems</strong> — PM Managing Systematic FX and Futures Strategies (hundreds of millions)</span>
-                        <ul className="pl-4 space-y-2 text-sm text-neutral-500 border-l px-4 border-neutral-200 mt-2">
-                          <li>- Built and managed currency-only strategy that raised over $300M during the financial crisis and delivered +25% in 2008 and +23% in 2009</li>
-                          <li>- Managed mean-reversion futures strategy within a predominantly trend-following futures program as a diversifier</li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span><strong>Centiva Capital</strong> — PM Systematic Currencies</span>
-                    </li>
-                  </ul>
-                </div>
+                  <div className="space-y-2">
+                    <p><strong>Barclays</strong> — Head British Pound Trader / Market Maker</p>
+                    <p><strong>ABN Amro</strong> — Proprietary FX Trading</p>
+                    <p><strong>Eagle Trading Systems</strong> — PM, Systematic FX & Futures (managed hundreds of millions)</p>
+                    <p><strong>Centiva Capital</strong> — PM, Systematic Currencies</p>
+                  </div>
 
-                {/* Currently */}
-                <div className="space-y-6">
-                  <h3 className="text-sm font-semibold uppercase tracking-widest text-neutral-500">
-                    Currently:
-                  </h3>
-                  <ul className="space-y-4 text-neutral-600 font-light">
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span>Providing real-time actionable analysis in the energy markets (crude, refined products, nat gas — futures, options, and CSOs) to hedge funds, refiners, and institutional energy clients</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-400 mt-1">•</span>
-                      <span>Sharing institutional frameworks for futures, currencies, and crypto independently through Meridian Compass</span>
-                    </li>
-                  </ul>
+                  <p>
+                    Built and managed a currency-only strategy that raised over $300M during the financial crisis and delivered +25% in 2008 and +23% in 2009.
+                  </p>
+
+                  <div className="space-y-4 pt-4">
+                    <h3 className="text-xl font-medium text-neutral-900">Currently:</h3>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li>Managing capital through systematic currency strategies</li>
+                      <li>Providing real-time market intelligence to hedge funds, refiners, and institutional energy clients — covering crude oil, natural gas, and refined products across physical, futures, and options markets</li>
+                    </ul>
+                  </div>
+
+                  <p className="pt-4">
+                    Meridian Compass extends that same real-time structural framework across FX, futures, and crypto.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Section 7 - How It's Delivered */}
+        {/* Section 7 - Membership */}
         <section className="w-full bg-[#FAFAFA]">
           <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
             <div className="space-y-12">
               <h2 className="text-2xl md:text-3xl font-light text-neutral-900">
-                How It&apos;s Delivered
+                MEMBERSHIP
               </h2>
 
-              <div className="space-y-6">
-                <p className="text-lg font-medium text-neutral-900">
-                  Private Telegram channel
+              <div className="space-y-6 text-xl text-neutral-900 font-light">
+                <p>
+                  <strong>Standard Membership:</strong> $1,000/month
                 </p>
-                <ul className="space-y-4 text-neutral-600 font-light text-lg">
+                <p>
+                  <strong>Founding Allocation:</strong> $600/month
+                </p>
+
+                <ul className="space-y-2 mt-4 text-neutral-600">
                   <li className="flex gap-3">
-                    <span className="text-neutral-400 mt-1">•</span>
-                    <span>Broadcast format (one-way communication)</span>
+                    <span className="text-neutral-400">•</span>
+                    <span>25 spots total</span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="text-neutral-400 mt-1">•</span>
-                    <span>Real-time context as markets develop</span>
+                    <span className="text-neutral-400">•</span>
+                    <span>10 positions filled</span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="text-neutral-400 mt-1">•</span>
-                    <span>No group chat — preserves focus and signal quality</span>
+                    <span className="text-neutral-400">•</span>
+                    <span>15 remaining</span>
                   </li>
                 </ul>
               </div>
 
-              <p className="font-medium text-neutral-900 text-lg border-t border-neutral-200 pt-12">
-                Professional market intelligence delivered in real time.
-              </p>
-            </div>
-          </div>
-        </section>
+              <div className="space-y-4 pt-8 text-xl text-neutral-900 font-light border-t border-neutral-200">
+                <h3 className="text-2xl font-medium text-neutral-900 mb-6">REQUEST ACCESS</h3>
 
-        {/* Section 8 - Why Act Now */}
-        <section className="w-full bg-white border-y border-neutral-100">
-          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
-            <div className="space-y-8 text-neutral-600 font-light text-lg leading-relaxed">
-              <h2 className="text-2xl md:text-3xl font-light text-neutral-900 mb-2">
-                Why Act Now
-              </h2>
+                <p>If this aligns with how you approach markets and you're looking for deeper real-time context, request access below.</p>
 
-              <p>
-                Founding tier closes permanently at 25 members.
-              </p>
-
-              <div className="pt-8 space-y-6">
-                <p>
-                  10 beta members are already inside and counting toward the 25.
-                </p>
-                <p>
-                  That leaves 15 founding spots.
-                </p>
-                <p className="font-medium text-neutral-900 border-l-2 border-neutral-300 pl-4">
-                  When those fill, the $600 rate is gone permanently.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 9 - Final CTA */}
-        <section className="w-full bg-[#FAFAFA]">
-          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32 text-center">
-            <div className="space-y-12">
-              <div className="space-y-6 text-xl md:text-2xl font-light text-neutral-900">
-                <p>
-                  In a world of competing narratives, conflicting data, and constant noise — Meridian Compass teaches you how to filter what matters.
-                </p>
-                <p>
-                  Taught by a PM actively managing assets and advising institutional clients — sharing the same frameworks I use in my institutional work.
-                </p>
+                <p>Access is selective.</p>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-8 text-left max-w-3xl mx-auto">
-                {/* Founding */}
-                <div className="p-8 bg-white border border-neutral-200 rounded-lg shadow-sm space-y-6">
-                  <p className="font-semibold text-neutral-900 border-b border-neutral-100 pb-4">
-                    Founding access:
-                  </p>
-                  <ul className="space-y-3 text-neutral-600 font-light">
-                    <li className="flex gap-3">
-                      <span className="text-neutral-900 mt-1">✓</span>
-                      <span>$600/month locked permanently</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-900 mt-1">✓</span>
-                      <span>15 spots remaining</span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Charter */}
-                <div className="p-8 bg-white border border-neutral-200 rounded-lg shadow-sm space-y-6">
-                  <p className="font-semibold text-neutral-900 border-b border-neutral-100 pb-4">
-                    Charter access (next 25 members):
-                  </p>
-                  <ul className="space-y-3 text-neutral-600 font-light">
-                    <li className="flex gap-3">
-                      <span className="text-neutral-900 mt-1">✓</span>
-                      <span>$800/month</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-neutral-900 mt-1">✓</span>
-                      <span>Opens when Founding closes</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="pt-8 max-w-2xl mx-auto space-y-6 text-neutral-600 font-light text-sm md:text-base leading-relaxed">
-                <p className="font-medium text-lg text-neutral-900">
-                  Interested in joining Meridian Compass?
-                </p>
-                <p>
-                  If this aligns with how you approach the markets and you&apos;re looking for deeper real-time context, you can request access below.
-                </p>
-                <p>
-                  Meridian Compass is intentionally kept small to maintain focus and quality, so access is granted selectively.
-                </p>
-                <p>
-                  If you&apos;re unsure whether it&apos;s the right fit, feel free to reach out with questions before applying.
-                </p>
-              </div>
-
-              <div className="max-w-sm mx-auto">
+              <div className="pt-8 max-w-sm">
                 <Link
                   href="/"
                   className="w-full py-4 bg-neutral-900 text-white rounded-md hover:bg-black font-medium transition-colors block text-center shadow-sm"
                 >
-                  Request Founding Access
+                  Request Access
                 </Link>
               </div>
             </div>
@@ -461,18 +225,8 @@ export default function Home() {
         {/* Section 10 - Disclaimer */}
         <section className="w-full bg-[#FAFAFA] border-t border-neutral-200">
           <div className="max-w-4xl mx-auto px-6 py-12 md:py-16 text-xs text-neutral-500 font-light space-y-4 leading-relaxed">
-            <p className="font-semibold text-neutral-600 mb-2">IMPORTANT DISCLAIMER</p>
             <p>
-              This service is for educational and informational purposes only and does not constitute investment advice, trading recommendations, or solicitation to buy or sell any financial instruments. All content represents the author&apos;s personal analysis and opinions and should not be construed as professional financial advice.
-            </p>
-            <p>
-              Trading futures, currencies, and cryptocurrencies involves substantial risk of loss and is not suitable for all investors. You should carefully consider whether trading is appropriate for you in light of your experience, objectives, financial resources, and other relevant circumstances. Past performance is not indicative of future results.
-            </p>
-            <p>
-              The author may hold positions in markets discussed in this service. Members are solely responsible for their own trading decisions and should conduct their own research and consult with qualified financial advisors before making any investment decisions.
-            </p>
-            <p>
-              By subscribing to Meridian Compass, you acknowledge that you understand these risks and agree that Mark Schaefer and Meridian Compass are not liable for any trading losses or damages that may result from using this information.
+              Educational and informational purposes only. Not investment advice. Trading involves risk. Past performance is not indicative of future results.
             </p>
           </div>
         </section>
