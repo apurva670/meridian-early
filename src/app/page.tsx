@@ -139,7 +139,7 @@ export default function Home() {
                 </h2>
                 <div className="text-lg text-neutral-600 font-light leading-relaxed space-y-6">
                   <p>
-                    30+ years managing institutional capital across FX, futures, and systematic strategies.
+                    30+ years managing institutional capital across FX, futures, and crypto.
                   </p>
 
                   <div className="space-y-2">
