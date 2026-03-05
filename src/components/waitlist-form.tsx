@@ -105,40 +105,43 @@ export function WaitlistForm({ turnstileSiteKey }: WaitlistFormProps) {
         <Card className="w-full max-w-lg border-neutral-200 dark:border-neutral-800 bg-neutral-50/80 dark:bg-neutral-900/50 backdrop-blur-sm shadow-sm">
             <div className="border-b border-neutral-200 px-6 py-4">
                 <h2 className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
-                    FOUNDING ALLOCATION — LIMITED RELEASE
+                    MEMBERSHIP
                 </h2>
             </div>
             <CardContent className="pt-6">
                 <div className="space-y-6 mb-8 text-neutral-800 text-sm">
-                    <div>
-                        <p className="font-semibold text-neutral-900 mb-1">25 Founding Members</p>
-                        <ul className="list-none space-y-0.5 text-neutral-600">
-                            <li>10 already inside</li>
-                            <li>15 positions remaining</li>
+                    <div className="space-y-1 text-base">
+                        <p>
+                            <strong className="text-neutral-900 font-medium">Standard Membership:</strong> $1,000/month
+                        </p>
+                        <p>
+                            <strong className="text-neutral-900 font-medium">Founding Allocation:</strong> $600/month
+                        </p>
+                        <ul className="list-none space-y-1 text-neutral-600 pt-2 text-sm">
+                            <li className="flex gap-2"><span className="text-neutral-400">•</span>25 spots total</li>
+                            <li className="flex gap-2"><span className="text-neutral-400">•</span>10 positions filled</li>
+                            <li className="flex gap-2"><span className="text-neutral-400">•</span>15 remaining</li>
                         </ul>
                     </div>
 
-                    <div>
-                        <p className="font-semibold text-neutral-900 mb-1">Founding rate: $600/month</p>
-                        <ul className="list-none space-y-0.5 text-neutral-600">
-                            <li>Locked permanently</li>
-                        </ul>
+                    <div className="space-y-2 pt-4 border-t border-neutral-100 text-[15px]">
+                        <p className="font-medium text-neutral-900 leading-snug">
+                            Your rate stays locked as long as membership remains active.
+                        </p>
+                        <p className="text-neutral-600 leading-snug">
+                            Capacity is intentionally limited to maintain quality and focus.
+                        </p>
                     </div>
 
-                    <div>
-                        <p className="font-semibold text-neutral-900 mb-1">Charter Tier — Next 25 members</p>
-                        <ul className="list-none space-y-0.5 text-neutral-600">
-                            <li>$800/month</li>
-                            <li>Opens when Founding closes</li>
-                        </ul>
+                    <div className="pt-4 border-t border-neutral-100 space-y-3">
+                        <h3 className="font-semibold text-neutral-900 text-base uppercase tracking-tight">REQUEST ACCESS</h3>
+                        <p className="text-neutral-600 text-[15px] leading-snug">
+                            If this aligns with how you approach markets and you're looking for deeper real-time context, request access below.
+                        </p>
+                        <p className="text-neutral-600 font-medium text-[15px]">
+                            Access is selective.
+                        </p>
                     </div>
-                    <div>
-                        <p className="text-neutral-600">After 50 total members: $1,000/month standard pricing.</p>
-                    </div>
-
-                    <p className="font-medium text-neutral-900 border-t border-neutral-100 pt-6">
-                        Once in at a price, that rate stays as long as membership remains continuous.
-                    </p>
                 </div>
 
                 <div className="pt-2">

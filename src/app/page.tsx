@@ -170,57 +170,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Section 7 - Membership */}
-        <section className="w-full bg-[#FAFAFA]">
-          <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
-            <div className="space-y-12">
-              <h2 className="text-2xl md:text-3xl font-light text-neutral-900">
-                MEMBERSHIP
-              </h2>
-
-              <div className="space-y-6 text-xl text-neutral-900 font-light">
-                <p>
-                  <strong>Standard Membership:</strong> $1,000/month
-                </p>
-                <p>
-                  <strong>Founding Allocation:</strong> $600/month
-                </p>
-
-                <ul className="space-y-2 mt-4 text-neutral-600">
-                  <li className="flex gap-3">
-                    <span className="text-neutral-400">•</span>
-                    <span>25 spots total</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-neutral-400">•</span>
-                    <span>10 positions filled</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-neutral-400">•</span>
-                    <span>15 remaining</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="space-y-4 pt-8 text-xl text-neutral-900 font-light border-t border-neutral-200">
-                <h3 className="text-2xl font-medium text-neutral-900 mb-6">REQUEST ACCESS</h3>
-
-                <p>If this aligns with how you approach markets and you're looking for deeper real-time context, request access below.</p>
-
-                <p>Access is selective.</p>
-              </div>
-
-              <div className="pt-8 max-w-sm">
-                <Link
-                  href="/"
-                  className="w-full py-4 bg-neutral-900 text-white rounded-md hover:bg-black font-medium transition-colors block text-center shadow-sm"
-                >
-                  Request Access
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Section 10 - Disclaimer */}
         <section className="w-full bg-[#FAFAFA] border-t border-neutral-200">
